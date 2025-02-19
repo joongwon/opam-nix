@@ -340,6 +340,7 @@ pkgs
   "neko-dev" = neko;
   "neko" = neko;
   "nettle-dev" = nettle.dev;
+  "ninja-build" = ninja;
   "npm" = nodePackages.npm;
   "perl" = pkgsBuildBuild.perl;
   "pkg-config" = pkgsBuildBuild.pkg-config;
