@@ -833,7 +833,7 @@ rec {
         '';
       };
     in
-    buildOpamProject args name generatedOpamFile query;
+    buildOpamProject (builtins.removeAttrs args [ "dune" ]) name generatedOpamFile query;
 
   # takes an atribute set of package definitions (as produced by `queryToDefs`),
   # deduplicates sources, and provides a list of sources to fetch
